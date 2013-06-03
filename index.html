@@ -1,0 +1,24 @@
+<!DOCTYPE html/>
+<html lang="en" onload="init();">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/draw.css">
+  <script type="text/javascript" src="/lib/client/javascript/StompJms.js"></script>
+  <title>Paint</title>
+</head>
+<body>
+  <div id="container">
+    <canvas id="imageView" width="800" height="500">
+      Your browser doesn't support the HTML5 canvas tag.
+    </canvas>
+    <script type="text/javascript" src="js/draw.js"></script>
+  </div>
+  <p>
+    <button id="recordButton" onclick="toggleRecording();">Start Recording</button>
+    <button id="eraseRecordingButton" onclick="playBack(document.getElementById('slider').value);">Play Back</button>
+    &nbsp;Speed: <input id="slider" type="range" min="1" max="10">
+    <p>
+      <button id="clearScreenButton" onclick="clearScreen();">Clear Screen</button>
+      <button id="eraseDBButton" onclick="eraseDB();">Delete Recording</button>
+  </body>
+</html>
