@@ -1,0 +1,10 @@
+{ "name": "KaazingMongoDB",
+  "description": "Simple Drawing Application",
+  "version": "1.1.0",
+  "dependencies": {
+    "mongodb": "x.x.x",
+	"rsvp": "1.2.0",
+	"stomp": "0.1.1"	
+  },
+  "main": "server/server.js"
+}
